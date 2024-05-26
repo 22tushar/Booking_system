@@ -107,7 +107,7 @@ router.post("/get-user-by-id", authMiddleware, async (req, res) => {
 });
 
 // get all users
-router.post("/get-all-users", authMiddleware, async (req, res) => {
+router.get("/get-all-users", async (req, res) => {
   try {
     const users = await User.find({});
     res.send({
