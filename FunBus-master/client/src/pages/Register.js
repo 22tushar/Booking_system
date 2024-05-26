@@ -12,8 +12,8 @@ function Register() {
   const onFinish = async (values) => {
     try {
       dispatch(ShowLoading());
-      const response = await axios.post("/api/users/register", values);
-      dispatch(HideLoading());
+      const response = await axios.post("https://booking-system-2iwd.onrender.com/api/users/register", values);
+      dispatch(HideLoading())
       if (response.data.success) {
         message.success(response.data.message);
         navigate("/login");

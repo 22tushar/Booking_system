@@ -13,7 +13,6 @@ function Login() {
     try {
       dispatch(ShowLoading());
       const response = await axios.post("/api/users/login", values);
-      alert(response.data.success)
       dispatch(HideLoading());
       if (response.data.success) {
         message.success(response.data.message);
