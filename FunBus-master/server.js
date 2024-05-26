@@ -9,7 +9,7 @@ app.use(express.json());
 
  // Use this after the variable declaration
 const corsOptions ={
-    origin:['https://booking-system-kg9pn08xu-22tushars-projects.vercel.app/','http://localhost:3000'],
+    origin:['https://booking-system-indol.vercel.app','http://localhost:3000'],
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
