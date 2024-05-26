@@ -9,6 +9,10 @@ const usersRoute = require("./routes/usersRoute");
 const busesRoute = require("./routes/busesRoute");
 const bookingsRoute = require("./routes/bookingsRoute");
 
+app.get("/hello", async (req, res) => {
+    res.send("Hello Tushar!");
+})
+
 app.use("/api/users", usersRoute);
 app.use("/api/buses", busesRoute);
 app.use("/api/bookings", bookingsRoute);
