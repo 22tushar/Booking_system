@@ -38,7 +38,7 @@ router.post("/register", async (req, res) => {
 
 router.post("/login",  (req, res) => {
 
-  res.send(req.body);
+  res.send("Login!");
   // try {
   //   const userExists = await User.findOne({ email: req.body.email });
   //   if (!userExists) {
