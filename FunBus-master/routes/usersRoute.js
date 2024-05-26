@@ -36,7 +36,7 @@ router.post("/register", async (req, res) => {
 
 // login user
 
-router.post("/login",  (req, res) => {
+router.get("/login",  (req, res) => {
 
   res.send("Login!");
   // try {
