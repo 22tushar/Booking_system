@@ -41,9 +41,9 @@ function App() {
           <Route
             path="/bookings"
             element={
-              <ProtectedRoute>
+              // <ProtectedRoute>
                 <Bookings />
-              </ProtectedRoute>
+              // </ProtectedRoute>
             }
           />
 
